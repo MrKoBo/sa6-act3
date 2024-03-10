@@ -1,5 +1,5 @@
 words = ["Acedd","Add","Abew", "Aatr"]
-sorted_words = sorted(words)
 
-longest_words = sorted(sorted_words, key=lambda x: len(x))
+longest_words = sorted(words, key=lambda x: (len(x), x))
+
 print(longest_words)
